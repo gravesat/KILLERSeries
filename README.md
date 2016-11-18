@@ -1,44 +1,35 @@
 # Killer Series
-
-#### Website - http://www.killerseries.co.uk
-
-#### Production Blog - http://blog.killerseries.co.uk
+####The Killer Series is a brand new teen-horror slasher web series premiering on 12th December 2016 on the KILLER app and website.
 
 ## Group Members
 ####With Tasks Listed
 ###----------------
 ### Talitha Gravesande - Mobile App Developer
-####App (Layout & Code)
+####App (Layout & Code & Assets)
 ####Twitter Bot
-####App Icon
 ####Photography
 ####YouTube
 ####Poster, Character Profiling, Banners & DP (Photoshop Assets)
 ####Bot Tweets
-####Mobile Game
+####Game
 ####Social Media (Twitter)
+####Web App
+####Character Profiling
+####Demographic Research
+####Genre Research
+
 
 ### Michael Hewins - TV Producer
 ####Project Managing
 ####Trailer
 ####Editing-Script
-####Poster
-####Character Profiling & Banners (InDesign -Final Stage)
+####Interactive Poster
 ####Code for Live Video stream for both App & Web
 ####Location
 ####Actor
 ####Instagram
 ####Casting
 ####QR Code
-
-### Ashley Armstrong - Website App Developer
-####Website (Layout & Code)
-####Lighting
-####Poster, Character Profiling, Banners & DP (Illustrator Assets)
-####Github Setup & Management
-####Slack Setup
-####First Contact for Actors
-####Social Media (Facebook)
-####Website Domains
-####Email Setup
-####Production Blog
+####Web App
+####Flyer
+####Demographic Research
