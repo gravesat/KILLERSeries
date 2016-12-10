@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  <link rel="stylesheet" type="text/css" href="css/ionic.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/ionicons.min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>ABOUT</title>
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="/css/gradient.css">
+
+</head>
+<body>
+
+  <div id="o-wrapper" style="vertical-align:middle; text-align:center" class="o-wrapper">
+      <nav class="o-header-nav" style="background-color:black;">
+        <button id="c-button--slide-left" class="c-button" style="color:white;background-color:black;border:none;">☰</button>
+        <a href="index.html"><img src="img/logo.png" width="150" height="150" style="margin-top:10px;"></a>
+        <p><a href="#" class="button button-clear" id="logout" style="color:white">Logout</a></p>
+      </nav>
+    </header><!-- /o-header -->
+
+</div><!-- /o-wrapper -->
+
+<nav id="c-menu--slide-left" class="c-menu c-menu--slide-left" style="background-color:black;">
+  <button class="c-menu__close" style="background-color:black;border-style:none;text-align:left;">☰ CLOSE</button>
+  <ul class="c-menu__items">
+    <li class="c-menu__item" style="text-align:left;border-bottom:solid 1px #ffffff;"><a href="index.html" class="c-menu__link">HOME</a></li>
+    <li class="c-menu__item" style="text-align:left;border-bottom:solid 1px #ffffff;"><a href="about.html" class="c-menu__link">ABOUT</a></li>
+    <li class="c-menu__item" style="text-align:left;border-bottom:solid 1px #ffffff;"><a href="characters.html" class="c-menu__link">CHARACTERS</a></li>
+    <li class="c-menu__item" style="text-align:left;border-bottom:solid 1px #ffffff;"><a href="joinkiller.html" class="c-menu__link">WATCH</a></li>
+    <li class="c-menu__item" style="text-align:left;border-bottom:solid 2px #ffffff;"><a href="profile.html" class="c-menu__link">MY PROFILE</a></li>
+  </ul>
+</nav><!-- /c-menu slide-left -->
+<div id="c-mask" class="c-mask"></div><!-- /c-mask -->
+
+<!-- menus script -->
+<script src="js/menu.js"></script>
+<script>
+
+
+$(document).ready(function(){
+    $("#video-container").click(function(){
+        $("#text").toggle(300);
+    });
+
+    $("#video-container").click(function(){
+        $("#overlay").toggle(300);
+    });
+
+});
+
+/**var e = document.getElementById('video-container');
+e.onmouseover = function() {
+  document.getElementById('overlay').style.display = 'block';
+}
+e.onmouseout = function() {
+  document.getElementById('overlay').style.display = 'none';
+}*
+
+  /**
+   * Slide left instantiation and action.
+   */
+  var slideLeft = new Menu({
+    wrapper: '#o-wrapper',
+    type: 'slide-left',
+    menuOpenerClass: '.c-button',
+    maskId: '#c-mask'
+  });
+
+  var slideLeftBtn = document.querySelector('#c-button--slide-left');
+
+  slideLeftBtn.addEventListener('click', function(e) {
+    e.preventDefault;
+    slideLeft.open();
+  });
+
+
+
+  /**
+   * Push left instantiation and action.
+   */
+  var pushLeft = new Menu({
+    wrapper: '#o-wrapper',
+    type: 'push-left',
+    menuOpenerClass: '.c-button',
+    maskId: '#c-mask'
+  });
+
+  var pushLeftBtn = document.querySelector('#c-button--push-left');
+
+  pushLeftBtn.addEventListener('click', function(e) {
+    e.preventDefault;
+    pushLeft.open();
+  });
+
+
+</script>
+
+
+
+<!-- ADD YOUR CONTENT HERE! -->
+
+<H3>TRAILER</H3>
+<div id="video-container" style="width:100%">
+   <video autoplay loop muted>
+       <source src="video.mp4" type="video/mp4" style="width:100%">
+       Your browser does not support the video tag.
+   </video>
+   <div id="overlay" style="text-align:center;padding-left:60px;padding-right:60px;background-color:grey;background: rgba(25, 25, 25,.9);margin:40px;">
+      <h5 id="text" style="color:white;font-weight:200">Season 1 Trailer <br> PILOT <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</h5>
+
+   </div>
+</div>
+<br>
+
+
+
+
+<H3>EPISODES</H3>
+<div id="video-container" style="width:100%">
+   <video autoplay loop muted>
+       <source src="video.mp4" type="video/mp4" style="width:100%">
+       Your browser does not support the video tag.
+   </video>
+   <div id="overlay" style="text-align:center;padding-left:60px;padding-right:60px;background-color:grey;background: rgba(25, 25, 25,.9);margin:40px;">
+      <h5 id="text" style="color:white;font-weight:200">Season 1, Episode 1 <br> PILOT <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</h5>
+
+   </div>
+</div>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/jq.js"></script>
+<script type="text/javascript" src="js/auth.js"></script>
+<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+
+
+
+</body>
+</html>

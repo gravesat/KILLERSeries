@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  <link rel="stylesheet" type="text/css" href="css/ionic.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/ionicons.min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>ABOUT</title>
+  <link rel="stylesheet" href="css/gallery.css">
+  <style>
+  body {
+    background-color: black;
+    margin: 0px;
+    padding:0px;
+  }
+
+  h3 {
+    color: white;
+    text-align: center;
+  }
+
+
+
+  </style>
+
+</head>
+<body>
+
+  <div id="o-wrapper" style="vertical-align:middle; text-align:center" class="o-wrapper">
+      <nav class="o-header-nav" style="background-color:black;">
+        <button id="c-button--slide-left" class="c-button" style="color:white;background-color:black;border:none;">☰</button>
+        <a href="index.html"><img src="img/logo.png" width="150" height="150" style="margin-top:10px;"></a>
+        <p><a href="#" class="button button-clear" id="logout" style="color:white">Logout</a></p>
+      </nav>
+    </header><!-- /o-header -->
+
+</div><!-- /o-wrapper -->
+
+<nav id="c-menu--slide-left" class="c-menu c-menu--slide-left" style="background-color:black;">
+  <button class="c-menu__close" style="background-color:black;border-style:none;text-align:left;">☰ CLOSE </button>
+  <ul class="c-menu__items">
+    <li class="c-menu__item" style="text-align:left;border-bottom:solid 1px #ffffff;"><a href="index.html" class="c-menu__link">HOME</a></li>
+    <li class="c-menu__item" style="text-align:left;border-bottom:solid 1px #ffffff;"><a href="about.html" class="c-menu__link">ABOUT</a></li>
+    <li class="c-menu__item" style="text-align:left;border-bottom:solid 1px #ffffff;"><a href="characters.html" class="c-menu__link">CHARACTERS</a></li>
+    <li class="c-menu__item" style="text-align:left;border-bottom:solid 1px #ffffff;"><a href="joinkiller.html" class="c-menu__link">WATCH</a></li>
+    <li class="c-menu__item" style="text-align:left;border-bottom:solid 2px #ffffff;"><a href="profile.html" class="c-menu__link">MY PROFILE</a></li>
+  </ul>
+</nav><!-- /c-menu slide-left -->
+<div id="c-mask" class="c-mask"></div><!-- /c-mask -->
+
+<!-- menus script -->
+<script src="js/menu.js"></script>
+<script>
+
+
+$(document).ready(function(){
+    $("#video-container").click(function(){
+        $("#text").toggle(300);
+    });
+
+    $("#video-container").click(function(){
+        $("#overlay").toggle(300);
+    });
+
+});
+
+/**var e = document.getElementById('video-container');
+e.onmouseover = function() {
+  document.getElementById('overlay').style.display = 'block';
+}
+e.onmouseout = function() {
+  document.getElementById('overlay').style.display = 'none';
+}*
+
+  /**
+   * Slide left instantiation and action.
+   */
+  var slideLeft = new Menu({
+    wrapper: '#o-wrapper',
+    type: 'slide-left',
+    menuOpenerClass: '.c-button',
+    maskId: '#c-mask'
+  });
+
+  var slideLeftBtn = document.querySelector('#c-button--slide-left');
+
+  slideLeftBtn.addEventListener('click', function(e) {
+    e.preventDefault;
+    slideLeft.open();
+  });
+
+
+
+  /**
+   * Push left instantiation and action.
+   */
+  var pushLeft = new Menu({
+    wrapper: '#o-wrapper',
+    type: 'push-left',
+    menuOpenerClass: '.c-button',
+    maskId: '#c-mask'
+  });
+
+  var pushLeftBtn = document.querySelector('#c-button--push-left');
+
+  pushLeftBtn.addEventListener('click', function(e) {
+    e.preventDefault;
+    pushLeft.open();
+  });
+
+
+</script>
+
+
+<!-- ADD YOUR CONTENT HERE! -->
+
+<H3>CHARACTERS</H3>
+
+<div class="gallery" style="padding:5px;">
+      <ul>
+        <li>
+          <a href="#" title="Tammy Rodgers">
+            <img src="img/img1.jpg" alt="" />
+               <div class="info"><br>
+                 <h3> Tammy Rodgers</h3>
+                 <p>She is controlling, secretive,
+                belittling and mean. She
+                will do everything in her
+                power to get what she
+                wants.</p></div>
+        </li>
+        <li>
+          <a href="#" title="Kieran Hayward">
+               <img src="img/img1.jpg" alt="" />
+               <div class="info"></br>
+              <h3>Kieran Hayward</h3>
+              <p>He has a
+              bad temper, and reacts to the
+              smallest things. He is sporty,
+              physically strong and
+              determined.</p></div>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="Melissa Underwood">
+            <img src="img/img1.jpg" alt="" />
+               <div class="info"></br>
+                 <h3>Melissa Underwood</h3>
+                 <p>She is pure, sweet, and
+                innocent. By aiming to do
+                good by people, she doesn’t
+                acknowledge their faults.</p></div>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="Nathan Dawkins">
+            <img src="img/img1.jpg" alt="" />
+               <div class="info"></br>
+                 <h3>Nathan Dawkins</h3>
+                 <p>He is a naturally funny
+                character that is loving,
+                caring and emotionally
+                attached to anyone that he
+                cares about.</p></div>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="Kane Newer">
+            <img src="img/img1.jpg" alt="" />
+               <div class="info"></br>
+                 <h3>Kane Newer</h3>
+                 <p>He is controlling, private, and
+                sarcastic. He classes
+                himself as the leader of the
+                group.</p></div>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="Tegan Hayward">
+            <img src="img/img1.jpg" alt="" />
+               <div class="info"></br>
+                 <h3>Tegan Hayward</h3>
+                 <p>She is extremely well off, but
+                she doesn’t show it. She is
+                a loyal girl, but can spark
+                a temper when pushed over
+                the edge.</p></div>
+          </a>
+        </li>
+
+
+      </ul>
+    </div><!-- .gallery -->
+
+<script>
+
+//SCRIPT FOR GALLERY
+
+$(function () {
+  $(".gallery li").on("mouseenter mouseleave", function(e){
+
+/** the width and height of the current div **/
+var w = $(this).width();
+var h = $(this).height();
+
+/** calculate the x and y to get an angle to the center of the div from that x and y. **/
+/** gets the x value relative to the center of the DIV and "normalize" it **/
+var x = (e.pageX - this.offsetLeft - (w/2)) * ( w > h ? (h/w) : 1 );
+var y = (e.pageY - this.offsetTop  - (h/2)) * ( h > w ? (w/h) : 1 );
+
+/** the angle and the direction from where the mouse came in/went out clockwise (TRBL=0123);**/
+/** first calculate the angle of the point,
+ add 180 deg to get rid of the negative values
+ divide by 90 to get the quadrant
+ add 3 and do a modulo by 4  to shift the quadrants to a proper clockwise TRBL (top/right/bottom/left) **/
+var direction = Math.round((((Math.atan2(y, x) * (180 / Math.PI)) + 180 ) / 90 ) + 3 )  % 4;
+
+
+
+/** check for direction **/
+switch(direction) {
+ case 0:
+  // direction top
+  var slideFrom = {"top":"-100%", "right":"0"};
+  var slideTo = {"top":0};
+
+  var imgSlide = "0, 60";
+ break;
+ case 1: //
+  // direction right
+  var slideFrom = {"top":"0", "right":"-100%"};
+  var slideTo = {"right":0};
+
+  var imgSlide = "-60, 0";
+ break;
+ case 2:
+  // direction bottom
+  var slideFrom = {"top":"100%", "right":"0"};
+  var slideTo = {"top":0};
+
+  var imgSlide = "0, -60";
+  break;
+ case 3:
+  // direction left
+  var slideFrom = {"top":"0", "right":"100%"};
+  var slideTo = {"right":0};
+
+  var imgSlide = "60, 0";
+ break;
+}
+
+    if( e.type === 'mouseenter' ) {
+
+      var element = $(this);
+
+      element.find(".info").removeClass("transform").css(slideFrom);
+      element.find("img").addClass("transform").css("transform","matrix(1, 0, 0, 1,"+imgSlide+")");
+
+      setTimeout(function(){
+        element.find(".info").addClass("transform").css(slideTo);
+      },1);
+
+
+    }else {
+
+      var element = $(this);
+
+      element.find(".info").addClass("transform").css(slideFrom);
+      element.find("img").removeClass("transform").css("transform","matrix(1, 0, 0, 1,"+imgSlide+")");
+
+      setTimeout(function(){
+        element.find("img").addClass("transform").css("transform","matrix(1, 0, 0, 1,0,0)");
+      },1);
+
+    }
+
+});
+
+});
+//SCRIPT FOR GALLERY END
+</script>
+
+
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/jq.js"></script>
+<script type="text/javascript" src="js/auth.js"></script>
+<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+
+
+
+</body>
+</html>

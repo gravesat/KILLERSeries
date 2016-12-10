@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  <link rel="stylesheet" type="text/css" href="css/ionic.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/ionicons.min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/gallery.css">
+  <style>
+  #video-container {
+  position: relative;
+}
+video {
+  height: auto;
+  width: 100%;
+}
+#overlay {
+  background: rgba(0,0,0,0);
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: black;
+  margin: 0px;
+  padding:0px;
+}
+
+h3 {
+  color: white;
+}
+
+a.activelink {
+  color:red;
+}
+
+  </style>
+</head>
+<body>
+
+  <div id="o-wrapper" style="vertical-align:middle; text-align:center" class="o-wrapper">
+      <nav class="o-header-nav" style="background-color:black;">
+        <button id="c-button--slide-left" class="c-button" style="color:white;background-color:black;border:none;">☰</button>
+        <a href="index.html"><img src="img/logo.png" width="150" height="150" style="margin-top:10px;"></a>
+        <p><a href="#" class="button button-clear" id="logout" style="color:white">Logout</a></p>
+      </nav>
+    </header><!-- /o-header -->
+
+
+  <!--div style="height:200px;background:#5E5E5E;text-align:center;margin-top:44px;padding:20px;">
+      <img src="" id="profilepic" style="padding:5px;border:1px solid #ADABAB;border-radius:50px;height:75px;width:75px;" />
+      <h5 id="name" style="color:#fff;"></h5>
+  </div-->
+  <h3>MY PROFILE</h3>
+      <ul class="list list-inset">
+        <li class="item" style="color:#D26F6F;text-align:left;">Email
+            <p class="item-note" id="email1"></p>
+        </li>
+            <a href="change-password.html" class="item item-icon-right" style="text-align:left;">Change Password <i class="icon ion-ios-arrow-right"></i></a>
+        </ul>
+
+
+
+
+</div><!-- /o-wrapper -->
+
+<nav id="c-menu--slide-left" class="c-menu c-menu--slide-left" style="background-color:black;">
+  <button class="c-menu__close" style="background-color:black;border-style:none;text-align:left;">☰ CLOSE</button>
+  <ul class="c-menu__items">
+    <li class="c-menu__item" style="text-align:left;border-bottom:solid 1px #ffffff;"><a href="index.html" class="c-menu__link">HOME</a></li>
+    <li class="c-menu__item" style="text-align:left;border-bottom:solid 1px #ffffff;"><a href="about.html" class="c-menu__link">ABOUT</a></li>
+    <li class="c-menu__item" style="text-align:left;border-bottom:solid 1px #ffffff;"><a href="characters.html" class="c-menu__link">CHARACTERS</a></li>
+    <li class="c-menu__item" style="text-align:left;border-bottom:solid 1px #ffffff;"><a href="joinkiller.html" class="c-menu__link">WATCH</a></li>
+    <li class="c-menu__item" style="text-align:left;border-bottom:solid 2px #ffffff;"><a href="profile.html" class="c-menu__link">MY PROFILE</a></li>
+  </ul>
+</nav><!-- /c-menu slide-left -->
+<div id="c-mask" class="c-mask"></div><!-- /c-mask -->
+
+<!-- menus script -->
+<script src="js/menu.js"></script>
+<script>
+
+
+$(document).ready(function(){
+    $("#video-container").click(function(){
+        $("#text").toggle(300);
+    });
+
+    $("#video-container").click(function(){
+        $("#overlay").toggle(300);
+    });
+
+});
+
+/**var e = document.getElementById('video-container');
+e.onmouseover = function() {
+  document.getElementById('overlay').style.display = 'block';
+}
+e.onmouseout = function() {
+  document.getElementById('overlay').style.display = 'none';
+}*
+
+  /**
+   * Slide left instantiation and action.
+   */
+  var slideLeft = new Menu({
+    wrapper: '#o-wrapper',
+    type: 'slide-left',
+    menuOpenerClass: '.c-button',
+    maskId: '#c-mask'
+  });
+
+  var slideLeftBtn = document.querySelector('#c-button--slide-left');
+
+  slideLeftBtn.addEventListener('click', function(e) {
+    e.preventDefault;
+    slideLeft.open();
+  });
+
+
+
+  /**
+   * Push left instantiation and action.
+   */
+  var pushLeft = new Menu({
+    wrapper: '#o-wrapper',
+    type: 'push-left',
+    menuOpenerClass: '.c-button',
+    maskId: '#c-mask'
+  });
+
+  var pushLeftBtn = document.querySelector('#c-button--push-left');
+
+  pushLeftBtn.addEventListener('click', function(e) {
+    e.preventDefault;
+    pushLeft.open();
+  });
+
+
+</script>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/jq.js"></script>
+<script type="text/javascript" src="js/auth.js"></script>
+<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+
+
+
+</body>
+</html>

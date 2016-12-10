@@ -1,0 +1,10 @@
+ion-content {
+  background-color: #000000;
+}
+ion-content h1 {
+  font-weight: bold;
+}
+
+ul .list li .item{
+  background-color: #000000;
+}

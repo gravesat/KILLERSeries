@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="lib/ionic/css/ionic.css" />
+    <link rel="stylesheet" type="text/css" href="lib/ionic/css/ionicons.css" />
+    <title>Home Page</title>
+    <script type="text/javascript">
+    var url = window.location.pathname;
+    var filename = url.substring(url.lastIndexOf('/') + 1);
+    if (localStorage.login == "true" && filename == 'login.html') {
+        window.location.href = "index.html";
+    } else if (localStorage.login == null) {
+        window.location.href = "login.html";
+    } else if (localStorage.login == "false" && filename != 'login.html') {
+        window.location.href = "login.html";
+    }
+    </script>
+    <style>
+        @keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+
+    body { margin: 0; }
+    div#slider { overflow: hidden; }
+    div#slider figure img { width: 20%; float: left; }
+    div#slider figure {
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 30s slidy infinite;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="bar bar-header" style="background-color:black;">
+        <h1 class="title" style="color:white;">My Profile</h1>
+        <a href="#" class="button button-clear" id="logout" style="color:white;">Logout</a>
+    </div>
+    <!-- Add prerecorded video/episode below-->
+
+        <base href="http://talarthurmedia.co.uk/">
+        <div id="slider">
+        <figure>
+        <img src="IMG_0393a.jpg" alt>
+        <img src="IMG_0449a.jpg" alt>
+        <img src="ibiza.jpg" alt>
+        <img src="ankor-wat.jpg" alt>
+        <img src="austin-fireworks.jpg" alt>
+          <img src="/IMG_0393a.jpg" width="100%" style=""/>
+        </figure>
+        </div>
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jq.js"></script>
+    <script type="text/javascript" src="js/auth.js"></script>
+</body>
+
+</html>

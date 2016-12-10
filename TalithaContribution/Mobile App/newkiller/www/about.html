@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  <link rel="stylesheet" type="text/css" href="css/ionic.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/ionicons.min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>ABOUT</title>
+  <link rel="stylesheet" href="css/gallery.css">
+
+  <style>
+
+  body {
+    background-color: black;
+    margin: 0px;
+    padding:0px;
+  }
+
+  h3 {
+    color: white;
+    text-align: center;
+  }
+  p {
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+  }
+
+  /*slider styling */
+  @keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+  }
+
+  body { margin: 0; }
+  div#slider { overflow: hidden; }
+  div#slider figure img { width: 20%; float: left; }
+  div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
+  }
+
+
+  /*slider styling */
+
+
+    /*video styling*/
+    #video-container {
+    position: relative;
+  }
+  video {
+    height: auto;
+    width: 100%;
+  }
+  #overlay {
+    background: rgba(0,0,0,0);
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    /*video styling*/
+
+  </style>
+</head>
+<body>
+
+  <div id="o-wrapper" style="vertical-align:middle; text-align:center" class="o-wrapper">
+      <nav class="o-header-nav" style="background-color:black;">
+        <button id="c-button--slide-left" class="c-button" style="color:white;background-color:black;border:none;">☰</button>
+        <a href="index.html"><img src="img/logo.png" width="150" height="150" style="margin-top:10px;"></a>
+        <p><a href="#" class="button button-clear" id="logout" style="color:white">Logout</a></p>
+      </nav>
+    </header><!-- /o-header -->
+
+</div><!-- /o-wrapper -->
+
+<nav id="c-menu--slide-left" class="c-menu c-menu--slide-left" style="background-color:black;">
+  <button class="c-menu__close" style="background-color:black;border-style:none;text-align:left;">☰ CLOSE </button>
+  <ul class="c-menu__items">
+    <li class="c-menu__item" style="text-align:left;border-bottom:solid 1px #ffffff;"><a href="index.html" class="c-menu__link">HOME</a></li>
+    <li class="c-menu__item" style="text-align:left;border-bottom:solid 1px #ffffff;"><a href="about.html" class="c-menu__link">ABOUT</a></li>
+    <li class="c-menu__item" style="text-align:left;border-bottom:solid 1px #ffffff;"><a href="characters.html" class="c-menu__link">CHARACTERS</a></li>
+    <li class="c-menu__item" style="text-align:left;border-bottom:solid 1px #ffffff;"><a href="joinkiller.html" class="c-menu__link">WATCH</a></li>
+    <li class="c-menu__item" style="text-align:left;border-bottom:solid 2px #ffffff;"><a href="profile.html" class="c-menu__link">MY PROFILE</a></li>
+  </ul>
+</nav><!-- /c-menu slide-left -->
+<div id="c-mask" class="c-mask"></div><!-- /c-mask -->
+
+<!-- menus script -->
+<script src="js/menu.js"></script>
+<script>
+
+
+$(document).ready(function(){
+    $("#video-container").click(function(){
+        $("#text").toggle(300);
+    });
+
+    $("#video-container").click(function(){
+        $("#overlay").toggle(300);
+    });
+
+});
+
+/**var e = document.getElementById('video-container');
+e.onmouseover = function() {
+  document.getElementById('overlay').style.display = 'block';
+}
+e.onmouseout = function() {
+  document.getElementById('overlay').style.display = 'none';
+}*
+
+  /**
+   * Slide left instantiation and action.
+   */
+  var slideLeft = new Menu({
+    wrapper: '#o-wrapper',
+    type: 'slide-left',
+    menuOpenerClass: '.c-button',
+    maskId: '#c-mask'
+  });
+
+  var slideLeftBtn = document.querySelector('#c-button--slide-left');
+
+  slideLeftBtn.addEventListener('click', function(e) {
+    e.preventDefault;
+    slideLeft.open();
+  });
+
+
+
+  /**
+   * Push left instantiation and action.
+   */
+  var pushLeft = new Menu({
+    wrapper: '#o-wrapper',
+    type: 'push-left',
+    menuOpenerClass: '.c-button',
+    maskId: '#c-mask'
+  });
+
+  var pushLeftBtn = document.querySelector('#c-button--push-left');
+
+  pushLeftBtn.addEventListener('click', function(e) {
+    e.preventDefault;
+    pushLeft.open();
+  });
+
+
+</script>
+
+
+<!-- ADD YOUR CONTENT HERE! -->
+
+<H3>ABOUT THE SHOW</H3>
+<div id="slider">
+<figure>
+<img src="http://www.talarthurmedia.co.uk/IMG_0393a.jpg" alt="">
+<img src="http://www.talarthurmedia.co.uk/IMG_0449a.jpg" alt="">
+<img src="http://www.talarthurmedia.co.uk/IMG_0393a.jpg" alt="">
+<img src="http://www.talarthurmedia.co.uk/IMG_0449a.jpg" alt="">
+<img src="http://www.talarthurmedia.co.uk/IMG_0449a.jpg" alt="">
+</figure>
+</div>
+<p>When unforgivable events transpire between six friends, the emotional build-up serves as a catalyst to the ruthless murder of one of the friends, a teenage who is at the centre of all the dark secrets and incidents within the friendship group. The murder leaves the remainder of the group with justified motives and in due course, prime suspects in the murder investigation. The killer’s fixation on revenge and obsession with the group, results in the macabre and lurid murder of anyone who tries to uncover the dark truth or unmask the ‘Killer’. With the group and the rest of the town being in apparent danger, the five friends continuously attempt to expose the anonymities of the killer in order to exempt themselves from murder charges by finally unveiling the killer. </p>
+
+
+
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/jq.js"></script>
+<script type="text/javascript" src="js/auth.js"></script>
+<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="/lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+
+  <body ng-app="starter">
+
+
+
+
+
+    <ion-pane class="pane" style="text-align:center">
+
+
+
+    <ion-content>
+
+
+
+      <img src="img/logo.png" width="80%" style="position:relative;top:200px">
+
+
+    <div class="list" style="padding:50px;opacity:0.5;position:relative;top:170px">
+  <label class="item item-input">
+    <input type="text" placeholder="Username">
+  </label>
+  <br>
+  <label class="item item-input">
+    <input type="password" placeholder="Password">
+  </label>
+  </div>
+
+  <p style="color:white;position:relative;top:115px;text-align:right;margin-right:50px;">Forgot your Password?</p>
+  <button class="button button-light" style="width:80%;position:relative;top:120px;text-align:center;background-color:red;opacity:0.4;color:white;">
+  Login
+  </button>
+
+  <facebook button -->
+  <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false">
+
+  </div>
+
+  <button class="button button-light" style="width:80%;position:relative;top:170px;text-align:center;background-color:blue;opacity:0.4;color:white;">
+  Login with Facebook
+  </button>
+  <a href="register.html"><button class="button button-light" style="width:80%;position:relative;top:190px;text-align:center;background-color:red;opacity:0.4;color:white;">
+  Register
+  </button></a>
+
+
+      </ion-content>
+    </ion-pane>
+  </body>
+
+</html>
